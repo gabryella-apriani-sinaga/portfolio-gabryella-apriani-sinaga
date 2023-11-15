@@ -11,7 +11,7 @@ const RightAbout = () => {
     });
   }, []);
   return (
-    <section className="text-center">
+    <section className="text-center" style={{ overflow: "hidden" }}>
       <div data-aos="fade-left">
         <p className="text-left">
           Hello! My name is <b>Gabryella Apriani Sinaga</b>. You can call me{" "}

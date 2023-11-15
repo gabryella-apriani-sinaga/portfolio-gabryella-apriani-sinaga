@@ -1,17 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import AOS from "aos";
-import "aos/dist/aos.css"; // Import CSS AOS
-import { useEffect } from "react";
+import "aos/dist/aos.css";
 
 const RightEducation = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Durasi animasi
-      once: false, // Animasi hanya akan dijalankan sekali
+      duration: 800,
+      once: true,
     });
   }, []);
+
   return (
-    <div className="w-1/4 bg-[#bca37f] h-[6rem]" data-aos="fade-left"></div>
+    <div className="sm:w-1/4 w-1/5 inline-block" style={{ overflow: "hidden" }}>
+      <div className="bg-[#bca37f] h-[6rem]" data-aos="fade-left"></div>
+    </div>
   );
 };
 
