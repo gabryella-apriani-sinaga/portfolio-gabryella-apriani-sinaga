@@ -20,9 +20,10 @@ const Navbar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <nav
-      className={`fixed w-full top-0 transition-all duration-300 ${
+      className={`fixed w-full top-0 transition-all duration-300  ${
         isScrolled ? "bg-[#FFF2D8] pb-4 shadow" : "bg-[#FFF2D8]"
       } z-50`}
     >

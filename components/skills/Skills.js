@@ -19,9 +19,9 @@ const Skills = () => {
       >
         Skills
       </h3>
-      <section className="mx-auto sm:w-9/12 p-4 sm:p-0">
+      <section className="mx-auto sm:w-9/12 p-4 sm:p-0" data-aos="flip-up">
         <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-rows-2 gap-10 grid-cols-2">
-          <div data-aos="flip-up" className="bg-[#bca37f] h-auto py-5 rounded ">
+          <div className="bg-[#bca37f] h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/JavaScript-logo.png"
@@ -35,10 +35,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div
-            data-aos="flip-up"
-            className="bg-[#bca37f]  h-auto py-5 rounded "
-          >
+          <div className="bg-[#bca37f]  h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/nodejs-logo.png"
@@ -50,7 +47,7 @@ const Skills = () => {
             <p className="text-center  text-white text-bold text-xl">Node</p>
           </div>
 
-          <div data-aos="flip-up" className="bg-[#bca37f] h-auto py-5 rounded ">
+          <div className="bg-[#bca37f] h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/reactjs-logo.png"
@@ -62,7 +59,7 @@ const Skills = () => {
             <p className="text-center  text-white text-bold text-xl">ReactJS</p>
           </div>
 
-          <div data-aos="flip-up" className="bg-[#bca37f] h-auto py-5 rounded ">
+          <div className="bg-[#bca37f] h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/nextjs-logo.png"
@@ -74,7 +71,7 @@ const Skills = () => {
             <p className="text-center  text-white text-bold text-xl">NextJS</p>
           </div>
 
-          <div data-aos="flip-up" className="bg-[#bca37f] h-auto py-5 rounded ">
+          <div className="bg-[#bca37f] h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/typescript-logo.png"
@@ -88,7 +85,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div data-aos="flip-up" className="bg-[#bca37f] h-auto py-5 rounded ">
+          <div className="bg-[#bca37f] h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/tailwind-logo.jpg"
@@ -102,7 +99,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div data-aos="flip-up" className="bg-[#bca37f] h-auto py-5 rounded ">
+          <div className="bg-[#bca37f] h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/materialui-logo.png"
@@ -116,7 +113,7 @@ const Skills = () => {
             </p>
           </div>
 
-          <div data-aos="flip-up" className="bg-[#bca37f] h-auto py-5 rounded ">
+          <div className="bg-[#bca37f] h-auto py-5 rounded ">
             <div className="skill-shadow p-2 w-2/5  rounded-md bg-white mx-auto hover:scale-[1.1] transition-all duration-[300ms]">
               <Image
                 src="/images/github-logo.png"
