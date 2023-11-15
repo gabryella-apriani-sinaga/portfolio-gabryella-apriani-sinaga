@@ -10,7 +10,7 @@ import { useEffect } from "react";
 const Experience = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Durasi animasi
+      duration: 100, // Durasi animasi
       once: false, // Animasi hanya akan dijalankan sekali
     });
   }, []);

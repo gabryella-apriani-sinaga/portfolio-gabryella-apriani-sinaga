@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const Project = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 100,
       once: false,
     });
   }, []);

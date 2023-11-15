@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const Skills = () => {
   useEffect(() => {
     AOS.init({
-      duration: 700, // Durasi animasi
+      duration: 900, // Durasi animasi
       once: false, // Animasi hanya akan dijalankan sekali
     });
   }, []);
