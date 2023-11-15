@@ -24,7 +24,7 @@ const Experience = () => {
           {EXPERIENCE.map((exp, index) => (
             <div
               data-aos="zoom-in"
-              className="lg:flex lg:justify-normal lg:text-justify  items-center gap-2  border-dotted border-2 bg-white border-[#bca37f] p-4 rounded-md "
+              className="lg:flex lg:justify-normal lg:text-justify lg:w-full w-full sm:w-2/3 mx-auto items-center gap-2  border-dotted border-2 bg-white border-[#bca37f] p-4 rounded-md "
               key={exp.id}
               style={{
                 boxShadow:
@@ -39,7 +39,7 @@ const Experience = () => {
                   height={100}
                 />
               </div>
-              <div className=" lg:mx-0 mx-auto pt-4 sm:pt-0 ">
+              <div className=" lg:mx-0 mx-auto lg:pt-4 sm:pt-0  sm:mt-5 lg:mt-0">
                 <p className="font-bold pb-1 text-[#113946] text-left">
                   {exp.title}
                 </p>
