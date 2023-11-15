@@ -82,7 +82,7 @@ const MiddleEducation = () => {
             width={350}
             height={300}
           />
-          <div className="bg-white lg:w-3/4 w-5/6 top-[85%] lg:h-20 absolute lg:right-[-5] lg:inset-y-20 lg:inset-x-80 rounded-md">
+          <div className="bg-white lg:w-3/4 w-5/6 top-[85%] lg:h-20 absolute lg:right-[-15] lg:inset-y-20 lg:inset-x-80 rounded-md">
             <p className="p-2 text-xs">
               <i>
                 I am very grateful to be able to capture the moment with
