@@ -30,7 +30,7 @@ const Project = () => {
             }}
           >
             <div className=" md:flex sm:justify-end ">
-              <div className="sm:absolute xl:left-[-12%] lg:left-[-30%] md:left-[-20%] md:top-[14%] lg:top-[13%] rounded-md flex justify-center">
+              <div className="sm:absolute xl:left-[-12%] lg:left-[-30%] md:left-[-10%] md:top-[14%] lg:top-[13%] rounded-md flex justify-center">
                 <Image
                   className="rounded-md"
                   src={item.image}

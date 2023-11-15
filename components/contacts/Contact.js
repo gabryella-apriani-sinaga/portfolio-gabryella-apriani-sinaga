@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 const Contact = () => {
   return (
     <>
-      <h3 className="about text-4xl text-center  my-5" id="contact">
+      <h3 className="about text-4xl text-center  mt-12" id="contact">
         Contact
       </h3>
       <section className="text-center sm:w-2/5 p-3 mx-auto mb-10">
