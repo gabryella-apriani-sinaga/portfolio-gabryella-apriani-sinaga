@@ -10,7 +10,7 @@ import { useEffect } from "react";
 const Experience = () => {
   useEffect(() => {
     AOS.init({
-      duration: 700, // Durasi animasi
+      duration: 500, // Durasi animasi
       once: false, // Animasi hanya akan dijalankan sekali
     });
   }, []);
@@ -19,13 +19,11 @@ const Experience = () => {
       <h3 className="about text-4xl text-center sm:mt-24 my-10" id="experience">
         Experience
       </h3>
-      <section
-        className="mx-auto bg-[#FFF2D8] sm:py-16 p-4 py-12"
-        data-aos="zoom-in"
-      >
+      <section className="mx-auto bg-[#FFF2D8] sm:py-16 p-4 py-12">
         <div className="grid lg:grid-cols-2 gap-7 lg:w-3/5 md:w-3/4 mx-auto ">
           {EXPERIENCE.map((exp, index) => (
             <div
+              data-aos="zoom-in"
               className="lg:flex lg:justify-normal lg:text-justify  items-center gap-2  border-dotted border-2 bg-white border-[#bca37f] p-4 rounded-md "
               key={exp.id}
               style={{
