@@ -1,27 +1,180 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Dancing+Script:wght@700&family=Josefin+Sans&family=Kaushan+Script&family=Open+Sans:wght@700&family=Poppins:ital,wght@0,200;0,300;0,400;1,300;1,400&family=Preahvihear&display=swap");
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+@layer utilities {
+  .flexCenter {
+    @apply flex items-center justify-center;
+  }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  .flexBetween {
+    @apply flex items-center justify-between;
+  }
+
+  .flexColumn {
+    @apply flex flex-col;
+  }
+
+  .max-container {
+    @apply mx-auto max-w-[1440px];
+  }
+
+  .padding-container {
+    @apply px-6 lg:px-20 xl:px-0;
+  }
+
+  .hero {
+    @apply w-full;
+    background-color: #fff2d8;
+  }
+
+  .about {
+    @apply font-semibold;
+    font-family: "Playfair Display", serif;
+    color: #113946;
+  }
+
+  .nameHeader h3 {
+    @apply font-semibold text-blue my-5;
+    font-family: "Edu TAS Beginner", cursive !important;
+  }
+  .nameHeader h1 {
+    @apply font-semibold;
+    font-family: "Playfair Display", serif;
+    color: #113946;
+  }
+
+  .leftAbout {
+    background-image: image("/images/stratch.png");
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .nameHeader h2 {
+    @apply font-black mb-5;
+    font-family: "Playfair Display", serif;
+    color: #bca37f;
+    overflow: hidden;
+    border-right: 1px solid #fff2d8; /* You can change the color and style */
+    white-space: nowrap;
+    animation: typing 3s steps(30) infinite;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.logo {
+  color: #113946;
+  font-family: "Edu TAS Beginner", cursive !important;
+}
+.activeHamburger {
+  width: 30px;
+  height: 3px;
+  border-radius: 5px;
+  transform: translateX(-50px);
+  background: transparent;
+  transition: all 0.5s ease-in-out;
+}
+
+.activeHamburger::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.activeHamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.hamburger {
+  width: 30px;
+  height: 3px;
+  background: #bca37f;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  transition: all 0.5s ease-in-out;
+}
+
+.hamburger::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #bca37f;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(-10px);
+}
+
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #bca37f;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(10px);
+  z-index: 999;
+}
+
+@media (max-width: 640px) {
+  .sidebarnav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    background-color: #bca37f;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    overflow: hidden;
+  }
+}
+
+.itdel-shaddow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.shaddow-foto {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.skill-shadow {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-shaddow {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+footer {
+  font-family: "Edu TAS Beginner", cursive !important;
 }
