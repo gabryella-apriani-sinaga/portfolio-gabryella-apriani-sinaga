@@ -3,8 +3,17 @@ import Image from "next/image";
 import Location from "../ui/icon/Location";
 import Calendar from "../ui/icon/Calendar";
 import { EXPERIENCE } from "@/constant";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import CSS AOS
+import { useEffect } from "react";
 
 const Experience = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 900, // Durasi animasi
+      once: false, // Animasi hanya akan dijalankan sekali
+    });
+  }, []);
   return (
     <>
       <h3 className="about text-4xl text-center sm:mt-24 my-10" id="experience">
@@ -16,8 +25,9 @@ const Experience = () => {
             <div
               className="lg:flex lg:justify-normal lg:text-justify  items-center gap-2 bg-[#bca37f] p-4 rounded-md "
               key={exp.id}
+              data-aos="zoom-in"
             >
-              <div className="skill-shadow p-2 w-1/4 h-auto rounded-md bg-white mx-auto">
+              <div className="skill-shadow sm:p-2 p-1 w-1/4 h-auto rounded-md bg-white mx-auto">
                 <Image
                   src={exp.image}
                   alt="logo-itdel"
@@ -30,7 +40,7 @@ const Experience = () => {
                   {exp.title}
                 </p>
                 <p className="text-sm  pb-1 text-left">
-                  <i className="font-semibold text-[#113946]">{exp.role} </i>
+                  <i className="font-semibold text-white">{exp.role} </i>
                   {exp.addition}
                 </p>
                 <span className="flex justify-left gap-1 pt-1 text-left">

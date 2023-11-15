@@ -1,9 +1,17 @@
-import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { PROJECT } from "@/constant";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Project = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      once: false,
+    });
+  }, []);
   return (
     <>
       <h3 className="about text-4xl text-center  my-10" id="project">
@@ -14,6 +22,8 @@ const Project = () => {
           <div
             className="bg-white project-shaddow p-5 lg:w-2/5 md:w-3/5 mx-auto rounded-md relative h-auto my-10"
             key={item.id}
+            data-aos="fade-up"
+            data-aos-duration="3000"
           >
             <div className=" md:flex sm:justify-end ">
               <div className="sm:absolute xl:left-[-12%] lg:left-[-30%] md:left-[-20%] md:top-[14%] lg:top-[13%] rounded-md flex justify-center">

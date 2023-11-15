@@ -11,7 +11,7 @@ import { useEffect } from "react";
 const MiddleEducation = () => {
   useEffect(() => {
     AOS.init({
-      duration: 700, // Durasi animasi
+      duration: 800, // Durasi animasi
       once: false, // Animasi hanya akan dijalankan sekali
     });
   }, []);
@@ -22,7 +22,7 @@ const MiddleEducation = () => {
       data-aos="zoom-in"
     >
       <div className="">
-        <div className="bg-white itdel-shaddow p-5 w-2/12 mx-auto rounded-md">
+        <div className="bg-white itdel-shaddow sm:p-5 p-2 w-2/12 mx-auto rounded-md">
           <Image
             src="/images/logo-itdel.jpg"
             alt="logo-itdel"

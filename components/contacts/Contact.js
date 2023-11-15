@@ -7,7 +7,7 @@ const Contact = () => {
       <h3 className="about text-4xl text-center  my-5" id="contact">
         Contact
       </h3>
-      <section className="text-center w-2/5 mx-auto mb-10">
+      <section className="text-center sm:w-2/5 p-3 mx-auto mb-10">
         <h1 className="text-xl font-bold">Get In Touch</h1>
         <p className="text-sm py-3">
           Although I'm not currently looking for any new opportunities, my inbox
