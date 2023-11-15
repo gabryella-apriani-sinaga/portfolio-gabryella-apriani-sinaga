@@ -14,16 +14,20 @@ const Project = () => {
   }, []);
   return (
     <>
-      <h3 className="about text-4xl text-center  my-10" id="project">
+      <h3 className="about text-4xl text-center  my-10 mt-16" id="project">
         Project
       </h3>
       <section className="mb-10">
         {PROJECT.map((item) => (
           <div
-            className="bg-white project-shaddow p-5 lg:w-2/5 md:w-3/5 mx-auto rounded-md relative h-auto my-10"
+            className="bg-white  p-5 lg:w-2/5 md:w-3/5 mx-auto rounded-md relative h-auto my-10"
             key={item.id}
             data-aos="fade-up"
             data-aos-duration="3000"
+            style={{
+              boxShadow:
+                "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+            }}
           >
             <div className=" md:flex sm:justify-end ">
               <div className="sm:absolute xl:left-[-12%] lg:left-[-30%] md:left-[-20%] md:top-[14%] lg:top-[13%] rounded-md flex justify-center">

@@ -18,7 +18,7 @@ const MiddleEducation = () => {
 
   return (
     <div
-      className="bg-[#fff2d8] h-auto lg:w-full p-5 lg:py-10 lg:pb-15 pb-28 aos-ignore"
+      className="bg-[#fff2d8] h-auto lg:w-full p-5 lg:py-10 lg:pb-15 pb-28 aos-ignore pt-10"
       data-aos="zoom-in"
     >
       <div className="">

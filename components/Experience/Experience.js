@@ -19,13 +19,17 @@ const Experience = () => {
       <h3 className="about text-4xl text-center sm:mt-24 my-10" id="experience">
         Experience
       </h3>
-      <section className="mx-auto bg-[#FFF2D8] sm:py-12 p-4 py-12">
-        <div className="grid grid-cols-2 gap-7 lg:w-3/5 md:w-3/4 mx-auto ">
+      <section className="mx-auto bg-[#FFF2D8] sm:py-16 p-4 py-12">
+        <div className="grid lg:grid-cols-2 gap-7 lg:w-3/5 md:w-3/4 mx-auto ">
           {EXPERIENCE.map((exp, index) => (
             <div
-              className="lg:flex lg:justify-normal lg:text-justify  items-center gap-2 bg-[#bca37f] p-4 rounded-md "
+              className="lg:flex lg:justify-normal lg:text-justify  items-center gap-2  border-dotted border-2 bg-white border-[#bca37f] p-4 rounded-md "
               key={exp.id}
               data-aos="zoom-in"
+              style={{
+                boxShadow:
+                  "rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px",
+              }}
             >
               <div className="skill-shadow sm:p-2 p-1 w-1/4 h-auto rounded-md bg-white mx-auto">
                 <Image
@@ -35,12 +39,12 @@ const Experience = () => {
                   height={100}
                 />
               </div>
-              <div className="text-white lg:mx-0 mx-auto pt-4 sm:pt-0 ">
+              <div className=" lg:mx-0 mx-auto pt-4 sm:pt-0 ">
                 <p className="font-bold pb-1 text-[#113946] text-left">
                   {exp.title}
                 </p>
                 <p className="text-sm  pb-1 text-left">
-                  <i className="font-semibold text-white">{exp.role} </i>
+                  <i className="font-semibold ">{exp.role} </i>
                   {exp.addition}
                 </p>
                 <span className="flex justify-left gap-1 pt-1 text-left">

@@ -21,7 +21,7 @@ const Banner = () => {
           </p>
         </div>
         <div
-          className="w-3/4  lg:border-[#BCA37F] lg:border-4 p-4 sm:py-4 py-7   rounded flex justify-center mx-auto"
+          className="xl:w-3/4 w-1/2 lg:border-[#BCA37F] lg:border-4 p-4  xl:py-5  py-4 rounded flex justify-center mx-auto"
           style={{
             boxShadow:
               "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px",

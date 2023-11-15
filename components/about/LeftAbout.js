@@ -38,7 +38,7 @@ const LeftAbout = () => {
       </div>
       <div className="flex gap-2 items-center py-5 justify-center lg:justify-normal">
         <Link
-          href="#"
+          href="mailto:gabryellaaprianisinaga@gmail.com"
           target="_blank"
           className="hover:scale-[1.4] transition-all duration-[300ms]"
           style={{
@@ -51,7 +51,7 @@ const LeftAbout = () => {
           <Email />
         </Link>
         <Link
-          href=""
+          href="https://wa.me/085361944149"
           target="_blank"
           className="hover:scale-[1.4] transition-all duration-[300ms]"
           style={{
