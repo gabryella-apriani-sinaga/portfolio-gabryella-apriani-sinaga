@@ -39,7 +39,7 @@ const Experience = () => {
                   height={100}
                 />
               </div>
-              <div className=" lg:mx-0 mx-auto lg:pt-4 sm:pt-0  sm:mt-5 lg:mt-0">
+              <div className=" lg:mx-0 mx-auto lg:pt-4 sm:pt-0 pt-4  sm:mt-5 lg:mt-0">
                 <p className="font-bold pb-1 text-[#113946] text-left">
                   {exp.title}
                 </p>
